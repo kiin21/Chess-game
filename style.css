@@ -1,0 +1,36 @@
+/* Green color */
+/* 769656 */
+/* Cream color */
+/* EEEED2 */
+
+.square {
+  background-color: #eeeed2;
+  width: 70px;
+  height: 70px;
+}
+.dad-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  height: 560px;
+  /* 70px * 80px = 560px */
+  width: 560px;
+}
+
+.files:nth-of-type(odd) .square:nth-of-type(even) {
+  background-color: #769656;
+}
+
+.files:nth-of-type(even) .square:nth-of-type(odd) {
+  background-color: #769656;
+}
+
+img {
+  width: 100%;
+}
